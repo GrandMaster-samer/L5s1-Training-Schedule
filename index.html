@@ -13,16 +13,19 @@
     }
     .tabs {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
+      overflow-x: auto;
       background: #333;
     }
     .tabs button {
       flex: 1;
+      min-width: 120px;
       padding: 14px;
       background: #333;
       color: white;
       border: none;
       cursor: pointer;
+      white-space: nowrap;
     }
     .tabs button:hover,
     .tabs button.active {
@@ -47,6 +50,10 @@
       display: block;
       margin-bottom: 8px;
     }
+    .exercise input[type="checkbox"] {
+      transform: scale(1.2);
+      margin-right: 10px;
+    }
   </style>
 </head>
 <body>
@@ -63,32 +70,43 @@
   <div id="Monday" class="tab-content active">
     <h2>Core & Glutes Stability</h2>
     <div class="exercise">
+      <label><input type="checkbox"> <strong>Glute Bridge with Band</strong></label>
       <img src="https://media.tenor.com/0qRdtov6wbQAAAAC/glute-bridge-exercise.gif" alt="Glute Bridge">
-      <strong>Glute Bridge with Band</strong><br>3 sets × 12 reps
+      3 sets × 12 reps
     </div>
     <div class="exercise">
+      <label><input type="checkbox"> <strong>Bird Dog</strong></label>
       <img src="https://media.tenor.com/abUbkgo0XowAAAAC/bird-dog.gif" alt="Bird Dog">
-      <strong>Bird Dog</strong><br>3 sets × 10/side
+      3 sets × 10/side
     </div>
     <div class="exercise">
+      <label><input type="checkbox"> <strong>Clamshell with Band</strong></label>
       <img src="https://media.tenor.com/wt6tEGQ_-80AAAAC/hip-abduction-clamshell.gif" alt="Clamshell">
-      <strong>Clamshell with Band</strong><br>3 sets × 15/side
+      3 sets × 15/side
     </div>
     <div class="exercise">
+      <label><input type="checkbox"> <strong>Pallof Press</strong></label>
       <img src="https://media.tenor.com/F4UvmTfSsqIAAAAC/pallof-press.gif" alt="Pallof Press">
-      <strong>Pallof Press</strong><br>3 sets × 12/side
+      3 sets × 12/side
     </div>
   </div>
 
   <div id="Tuesday" class="tab-content">
     <h2>Upper Body Strength</h2>
     <div class="exercise">
-      <img src="https://tse2.mm.bing.net/th/id/OIP.tyciuSMRH53LPxrnx_pczQAAAA?w=150&h=150&c=7" alt="Band Chest Press">
-      <strong>Band Chest Press</strong><br>3 sets × 12
+      <label><input type="checkbox"> <strong>Band Chest Press</strong></label>
+      <img src="https://media.tenor.com/NSsP3o0g9mIAAAAC/resistance-band-chest-press.gif" alt="Band Chest Press">
+      3 sets × 12
     </div>
     <div class="exercise">
-      <img src="https://tse3.mm.bing.net/th/id/OIP.EiLyR04aAFleSO5I4DCkwQAAAA?w=150&h=150&c=7" alt="Band Row">
-      <strong>Band Row</strong><br>3 sets × 15
+      <label><input type="checkbox"> <strong>Band Row</strong></label>
+      <img src="https://media.tenor.com/1BYqV2FUX8UAAAAC/resistance-band-row.gif" alt="Band Row">
+      3 sets × 15
+    </div>
+    <div class="exercise">
+      <label><input type="checkbox"> <strong>Banded Shoulder Press</strong></label>
+      <img src="https://media.tenor.com/vBn8f4rnkCwAAAAd/band-shoulder-press.gif" alt="Banded Shoulder Press">
+      3 sets × 10
     </div>
   </div>
 
@@ -100,18 +118,20 @@
   <div id="Thursday" class="tab-content">
     <h2>Lower Body</h2>
     <div class="exercise">
-      <img src="https://tse3.mm.bing.net/th/id/OIP._1Q3SuiaggYWUMA4lY5APgHaGG?w=150&h=150&c=7" alt="Kickbacks">
-      <strong>Standing Kickbacks</strong><br>3 sets × 12/side
+      <label><input type="checkbox"> <strong>Standing Kickbacks</strong></label>
+      <img src="https://media.tenor.com/R8Se-DcUwS0AAAAC/resistance-band-kickbacks.gif" alt="Kickbacks">
+      3 sets × 12/side
     </div>
     <div class="exercise">
-      <img src="https://tse2.mm.bing.net/th/id/OIP.jlVlvdxixjWJEJmdsho1NQHaFj?w=150&h=150&c=7" alt="Lateral Walk">
-      <strong>Lateral Band Walks</strong><br>3 sets × 12/side
+      <label><input type="checkbox"> <strong>Lateral Band Walks</strong></label>
+      <img src="https://media.tenor.com/i5R5DEKg6qkAAAAC/lateral-walk-band.gif" alt="Lateral Walk">
+      3 sets × 12/side
     </div>
   </div>
 
   <div id="Friday" class="tab-content">
     <h2>Core + Upper Support</h2>
-    <p>Repeat Pallof Press, Bird Dog, plus Face Pulls and Wall Plank Taps (no GIF).</p>
+    <p>Repeat Pallof Press, Bird Dog, plus Face Pulls and Wall Plank Taps.</p>
   </div>
 
   <div id="Saturday" class="tab-content">
