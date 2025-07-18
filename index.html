@@ -13,7 +13,6 @@
     }
     .tabs {
       display: flex;
-      flex-wrap: nowrap;
       overflow-x: auto;
       background: #333;
     }
@@ -25,7 +24,6 @@
       color: white;
       border: none;
       cursor: pointer;
-      white-space: nowrap;
     }
     .tabs button:hover,
     .tabs button.active {
@@ -45,13 +43,14 @@
       border-bottom: 1px solid #ccc;
     }
     .exercise img {
-      width: 180px;
+      width: 100%;
+      max-width: 300px;
       height: auto;
       display: block;
-      margin-bottom: 8px;
+      margin: 10px 0;
     }
     .exercise input[type="checkbox"] {
-      transform: scale(1.2);
+      transform: scale(1.3);
       margin-right: 10px;
     }
   </style>
@@ -104,8 +103,8 @@
       3 sets × 15
     </div>
     <div class="exercise">
-      <label><input type="checkbox"> <strong>Banded Shoulder Press</strong></label>
-      <img src="https://media.tenor.com/vBn8f4rnkCwAAAAd/band-shoulder-press.gif" alt="Banded Shoulder Press">
+      <label><input type="checkbox"> <strong>Shoulder Press with Band</strong></label>
+      <img src="https://media.tenor.com/vBn8f4rnkCwAAAAd/band-shoulder-press.gif" alt="Shoulder Press">
       3 sets × 10
     </div>
   </div>
